@@ -1,5 +1,5 @@
 variable location {}
-variable resource_group {}
+variable resource_group_name {}
 variable project {}
 variable environment_name {}
 variable address_space {}
