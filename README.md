@@ -1,4 +1,4 @@
-# Project: Azure VNET setup for Databricks VNET injected worksapace
+## Project: Azure VNET setup for Databricks VNET injected workspace
 
 **Project Description**: This project will deploy the resource group for the Databricks workspace and the VNET for the injected workspace.
 
@@ -31,6 +31,7 @@ and go into the repository and navigate to the terraform environment folder:
 
 ```
 cd  azure-adb-vnet-deployment/terraform/environments/test/
+```
 
 Run the Terraform init, plan, and apply commands to deploy the resources to build the Azure infrastructure:
 
