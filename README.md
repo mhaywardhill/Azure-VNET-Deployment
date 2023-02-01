@@ -18,7 +18,7 @@
   
 ```
 
-# Getting started
+## Getting started
 
 ##  Setup
 
