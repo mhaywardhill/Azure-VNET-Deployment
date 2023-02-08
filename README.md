@@ -33,6 +33,18 @@ and go into the repository and navigate to the terraform environment folder:
 cd  azure-adb-vnet-deployment/terraform/environments/test/
 ```
 
+### Set environment variables
+
+The project prefix is used to name all the resources.
+
+```variables
+HISTCONTROL=ignoreboth
+ export TF_VAR_project_name="<project prefix>"
+
+```
+
+###  Init, Apply, and Plan, to deploy resources using Terraform
+
 Run the Terraform init, plan, and apply commands to deploy the resources to build the Azure infrastructure:
 
 ```
