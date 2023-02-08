@@ -13,7 +13,8 @@
         └── modules            
             ├── resource_group                  <- Terraform config file to add resource group for the Databricks workspace and VNET
             ├── securitygroups                  <- Terraform config file to add security groups to the subnets
-            └── network                         <- Terraform config file to add VNET for the Databricks injected workspace
+            ├── network                         <- Terraform config file to add VNET for the Databricks injected workspace
+            └── keyvault                        <- Terraform config file to add Azure Key Vault and create a key
      
   
 ```

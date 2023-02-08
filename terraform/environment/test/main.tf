@@ -30,3 +30,11 @@ module "nsg" {
   environment_name    = var.environment_name
   depends_on = [module.network]
 }
+
+module "keyvault" {
+  source              = "../../modules/keyvault"
+  location            = var.location
+  resource_prefix     = "${var.project_name}-${var.environment_name}"
+  project             = var.project_name
+  depends_on = [module.network, module.nsg]
+}
