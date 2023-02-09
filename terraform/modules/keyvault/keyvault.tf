@@ -4,11 +4,11 @@ resource "random_string" "random" {
   length      = 8
   special     = false
   upper       = false
-  min_numeric = 2
+  numeric     = true
 }
 
 resource "azurerm_key_vault" "keyvault" {
-  name                = "${var.resource_prefix}-${random_string.random.result}-akv"
+  name                = "${var.resource_prefix}-${random_string.random.result}"
   location            = var.location
   resource_group_name = "${var.resource_prefix}-rg"
   tenant_id           = data.azurerm_client_config.current.tenant_id
