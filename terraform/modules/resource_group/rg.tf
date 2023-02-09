@@ -17,11 +17,3 @@ resource "azurerm_resource_group" "adb" {
   }
 }
 
-resource "azurerm_resource_group" "managed" {
-  name     = "${var.resource_group_prefix}-mrg"
-  location = var.location
-
-  tags = {
-    project = var.project
-  }
-}
